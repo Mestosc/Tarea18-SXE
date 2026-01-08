@@ -23,6 +23,7 @@ class paciente(models.Model):
 
     nombre = fields.Char()
     sintomas = fields.Char()
+
 class medico(models.Model):
     _name = 'gestion_hospital.medico'
     _description = 'gestion_hospital.medico'
@@ -30,9 +31,11 @@ class medico(models.Model):
     nombre = fields.Char()
     numero_colegiado = fields.Char(size=9)
 
-class pacientes_atendidos(models.Model):
-    _name = 'gestion_hospital.pacientes_atendidos'
-    _description = 'gestion_hospital.pacientes_atendidos'
+class diagnostico(models.Model):
+    _name = 'gestion_hospital.diagnostico'
+    _description = 'gestion_hospital.diagnostico'
+    medicos_ids = fields.Many2Many('gestion_hospital.medico')
+    pacientes_ids = fields.Many2Many('gestion_hospital.paciente')
 
     
 

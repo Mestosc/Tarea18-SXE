@@ -1,30 +1,36 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="gestion_hospital.gestion_hospital">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+      <record id="object0" model="gestion_hospital.paciente">
+        <field name="nombre">Juan Pérez</field>
+        <field name="sintomas">Fiebre y tos</field>
+    </record>
 
-          <record id="object1" model="gestion_hospital.gestion_hospital">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+    <record id="object1" model="gestion_hospital.paciente">
+        <field name="nombre">María López</field>
+        <field name="sintomas">Dolor abdominal</field>
+    </record>
 
-          <record id="object2" model="gestion_hospital.gestion_hospital">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+    <record id="object2" model="gestion_hospital.paciente">
+        <field name="nombre">Carlos Gómez</field>
+        <field name="sintomas">Mareos</field>
+    </record>
+    <record id="object3" model="gestion_hospital.medico">
+        <field name="nombre">Dra. Ana Ruiz</field>
+        <field name="numero_colegiado">12345678A</field>
+    </record>
 
-          <record id="object3" model="gestion_hospital.gestion_hospital">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+    <record id="object4" model="gestion_hospital.medico">
+        <field name="nombre">Dr. Luis Martínez</field>
+        <field name="numero_colegiado">87654321B</field>
+    </record>
+    <!--<record id="object5" model="gestion_hospital.diagnostico">
+        <field name="medicos_ids" eval="[(6, 0, [ref('medico_ana')])]"/>
+        <field name="pacientes_ids" eval="[(6, 0, [ref('paciente_juan'), ref('paciente_maria')])]"/>
+    </record>
 
-          <record id="object4" model="gestion_hospital.gestion_hospital">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+    <record id="object6" model="gestion_hospital.diagnostico">
+        <field name="medicos_ids" eval="[(6, 0, [ref('medico_ana'), ref('medico_luis')])]"/>
+        <field name="pacientes_ids" eval="[(6, 0, [ref('paciente_carlos')])]"/>
+    </record>-->
     </data>
 </odoo>

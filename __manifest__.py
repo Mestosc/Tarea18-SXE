@@ -2,10 +2,10 @@
 {
     'name': "Gestion Hospital",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Modulo para la gestion de un hospital",
 
     'description': """
-Long description of module's purpose
+    Permite gestionar a los medicos y a sus pacientes de una forma sencilla (teoricamente)
     """,
 
     'author': "My Company",

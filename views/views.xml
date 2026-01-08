@@ -12,6 +12,7 @@
       </field>
     </record>
 
+
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="gestion_hospital.action_window">

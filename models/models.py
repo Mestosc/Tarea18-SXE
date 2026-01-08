@@ -34,8 +34,8 @@ class medico(models.Model):
 class diagnostico(models.Model):
     _name = 'gestion_hospital.diagnostico'
     _description = 'gestion_hospital.diagnostico'
-    medicos_ids = fields.Many2Many('gestion_hospital.medico')
-    pacientes_ids = fields.Many2Many('gestion_hospital.paciente')
+    medicos_ids = fields.Many2many('gestion_hospital.medico')
+    pacientes_ids = fields.Many2many('gestion_hospital.paciente')
 
     
 
